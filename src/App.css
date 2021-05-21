@@ -1,38 +1,140 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+}
+.navbar-brand {
+  color: rgb(11, 156, 156) !important;
+}
+a {
+  text-decoration: none;
+  color: #000;
+  padding: 5px 10px;
+  font-weight: bold;
+}
+a:hover {
+  color: orange;
+}
+a:active,
+a.active {
+  color: red;
+}
+ul {
+  margin-left: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#header {
+  height: 80vh;
+  width: 100%;
+  margin-top: 70px;
+}
+#header .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    transform: translateY(-10px);
   }
+}
+.btn1 {
+  border: 1px solid rgb(91, 231, 250);
+  border-radius: 50px;
+  color: rgb(5, 52, 80);
+  font-weight: 600;
+  background-color: rgb(154, 236, 236);
+  transition: 1s ease all;
+}
+.btn1:hover {
+  border: 1px solid rgb(112, 214, 214);
+  color: rgb(4, 37, 56);
+  background-color: rgb(106, 202, 202);
+  box-shadow: 0px 0px 5px rgb(132, 132, 133);
+}
+.btn2 {
+  border: 1px solid rgb(5, 119, 139);
+  border-radius: 50px;
+  color: rgb(242, 246, 247);
+  font-weight: 600;
+  background-color: rgb(8, 136, 136);
+  transition: 1s ease all;
+}
+.btn2:hover {
+  color: rgb(8, 136, 136);
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgb(132, 132, 133);
+}
+.btn3 {
+  padding: 9px 60px;
+  background-color: blue;
+  color: #fff;
+  border: 1px solid blue;
+  transition: 1s ease-out all;
+  font-weight: bold;
+}
+.btn3:hover {
+  background-color: #fff;
+  color: blue;
+}
+.pCard {
+  height: 420px;
+  width: 100%;
+  border-radius: 30px;
+  margin-top: 15px;
+}
+.pCard1 {
+  height: 450px;
+  width: 100%;
+  background-color: purple;
+  color: #fff;
+  border-radius: 30px;
+}
+p span {
+  font-size: 4rem;
+  font-weight: bold;
+}
+hr {
+  opacity: 0.1;
+}
+.pTitle {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.pDetails {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 15px 0;
+}
+.pCard1 .pDetails {
+  font-size: 1rem;
+  margin: 25px 0;
+}
+.btn4 {
+  padding: 5px;
+  margin-top: 15px;
+  border-radius: 50px;
+  border: 1px solid purple;
+  background-color: purple;
+  color: #fff;
+  font-weight: bold;
+}
+.pCard1 .btn4 {
+  border: 1px solid #fff;
+  margin-top: 22px;
+  background-color: #fff;
+  color: purple;
+}
+.btn4:hover {
+  color: black;
+  background: burlywood;
 }
